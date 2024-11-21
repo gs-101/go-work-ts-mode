@@ -1,0 +1,1 @@
+This is a tree-sitter based mode for editing Go Workspace files. Feel free to use this, but I don't think I'll package this, but rather contribute it to Emacs core myself.
