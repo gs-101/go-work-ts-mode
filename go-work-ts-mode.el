@@ -83,6 +83,10 @@ what the parent of the node would be if it were a node."
    `([,@go-work-ts-mode--keywords] @font-lock-keyword-face)
 
    :language 'gowork
+   :feature 'number
+   '([(go_version) (version)] @font-lock-number-face)
+
+   :language 'gowork
    :feature 'operator
    '((["=>"]) @font-lock-warning-face)
 
