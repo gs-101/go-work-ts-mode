@@ -29,6 +29,7 @@
 
 (require 'treesit)
 (require 'go-ts-mode)
+(eval-when-compile (require 'rx))
 
 ;; go.work support.
 
