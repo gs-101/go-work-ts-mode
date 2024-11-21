@@ -83,7 +83,12 @@ what the parent of the node would be if it were a node."
 
    :language 'gowork
    :feature 'operator
-   '((["=>"]) @font-lock-warning-face))
+   '((["=>"]) @font-lock-warning-face)
+
+   :language 'gowork
+   :feature 'error
+   :override t
+   '((ERROR) @font-lock-warning-face))
   "Tree-sitter font-lock settings for `go-work-ts-mode'.")
 
 ;;;###autoload
