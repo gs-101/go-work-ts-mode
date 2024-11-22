@@ -88,7 +88,7 @@ what the parent of the node would be if it were a node."
 
    :language 'gowork
    :feature 'operator
-   '((["=>"]) @font-lock-warning-face)
+   '((["=>"]) @font-lock-operator-face)
 
    :language 'gowork
    :feature 'error
