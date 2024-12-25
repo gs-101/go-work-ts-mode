@@ -53,9 +53,10 @@ what the parent of the node would be if it were a node."
       (save-excursion
         (backward-up-list)
         (back-to-indentation)
-        (pcase (treesit-node-type (treesit-node-at (point)))
-          ("replace" t)
-          ("use" t))))))
+        (member (treesit-node-type
+                 (treesit-node-at (point)))
+                '("replace"
+                  "use"))))))
 
 (defvar go-work-ts-mode--keywords
   '("go" "replace" "use")
