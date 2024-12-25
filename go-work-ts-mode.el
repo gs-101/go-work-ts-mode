@@ -31,14 +31,7 @@
 (require 'go-ts-mode)
 (eval-when-compile (require 'rx))
 
-;; go.work support.
-
-(defvar go-work-ts-mode--syntax-table
-  (let ((table (make-syntax-table)))
-    (modify-syntax-entry ?/   ". 124b" table)
-    (modify-syntax-entry ?\n  "> b"    table)
-    table)
-  "Syntax table for `go-work-ts-mode'.")
+;;;; go.work support.
 
 (defvar go-work-ts-mode--indent-rules
   `((gowork
