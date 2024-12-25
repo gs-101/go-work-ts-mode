@@ -117,8 +117,8 @@ what the parent of the node would be if it were a node."
 
     (treesit-major-mode-setup)))
 
-(if (treesit-ready-p 'gowork)
-    (add-to-list 'auto-mode-alist '("/go\\.work\\'" . go-work-ts-mode)))
+;;;###autoload
+(add-to-list 'auto-mode-alist '("/go\\.work\\'" . go-work-ts-mode))
 
 (provide 'go-work-ts-mode)
 
