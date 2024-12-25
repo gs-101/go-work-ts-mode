@@ -94,7 +94,6 @@ what the parent of the node would be if it were a node."
 (define-derived-mode go-work-ts-mode prog-mode "Go Work"
   "Major mode for editing go.work files, powered by tree-sitter."
   :group 'go
-  :syntax-table go-work-ts-mode--syntax-table
 
   (when (treesit-ready-p 'gowork)
     (setq treesit-primary-parser (treesit-parser-create 'gowork))
